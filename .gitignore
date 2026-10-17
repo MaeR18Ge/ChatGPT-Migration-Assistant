@@ -1,0 +1,9 @@
+work/
+dist/
+*.user
+*.log
+*.zip
+.env
+.env.*
+.codex/
+.agents/
