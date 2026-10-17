@@ -1,4 +1,18 @@
-﻿# ChatGPT迁移助手
+﻿# ChatGPT Migration Assistant
+
+A portable **Windows PowerShell 5.1 + Windows Forms** application for moving supported ChatGPT, Codex and ChatCut local data folders to another local NTFS drive. It verifies copied files with SHA256 and creates directory junctions so applications can continue using their original paths.
+
+Features include automatic folder discovery, destination checks, an independent migration worker and progress window, interrupted-task recovery, rollback of the latest data, backup cleanup and diagnostic logs. Original backups are kept by default; disk space is reclaimed after you verify that the applications work and clean up those backups.
+
+### Quick start
+
+1. Download the ZIP from [Releases](https://github.com/MaeR18Ge/ChatGPT-Migration-Assistant/releases) and extract the entire folder.
+2. Double-click `Start.vbs`, or use `Start.cmd` if Windows Script Host is disabled.
+3. Choose a destination, scan and review the folders, then start migration and close the affected applications when prompted.
+
+Requires Windows 10/11, Windows PowerShell 5.1, a fixed local NTFS destination drive and Windows Task Scheduler. The interface is currently in Simplified Chinese. Existing directory junctions can be verified, but cannot be moved directly to a different destination. Application installation packages under `WindowsApps` are outside the migration scope.
+
+## ChatGPT迁移助手 · 中文介绍
 
 一个可以放在普通文件夹中运行的 **PowerShell 5.1 + Windows Forms** 桌面工具。支持识别并迁移 ChatGPT／Codex 与 ChatCut 的本地数据，保留原路径入口，不需要修改应用内部配置。
 
